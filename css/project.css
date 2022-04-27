@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #1a181b;
+}
+
+main {
+    height: 140vh;
+    
+}
+
+main h3 {
+    margin: 20px;
+    
+}
+
+main a {
+    margin-top: 50px;
+    color: #7A7A7A;
+    text-decoration: none;
+}
+
+main h3 span {
+    font-size: 1.2em;
+}
+
+.project-card {
+    width: 100%;
+    min-height: 400px;
+    padding: 10px;
+}
+
+.project-card .card-image {
+    width: 100%;
+    
+    
+}
+
+.project-card .card-image img {
+    height: 200px;
+    width: inherit;
+}
+
+.marginBtn {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 400px) {
+    .project-card .card-image img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.project-card .card-content h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project-card .card-content p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.project-card .card-content a {
+    text-decoration: none;
+}
+
+.project-card .card-content .check {
+    color: #F2994A;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #F2994A;
+    padding: 10px;
+}
+
+.card-content {
+    min-height: 100px;
+}
+
+.buttom {
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+        gap: 10px;
+        padding: 1em;
+        min-height: 500px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    
+
+    .project-card .card-content .check {
+        width: 100%;
+    }
+
+    .buttom {
+        margin-top: 0;
+       
+    }
+
+    .view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .view a {
+        margin-top: -5px;
+    }
+
+    .marginBtn {
+        margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .grid {
+        
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+  }

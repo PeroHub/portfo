@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;    
+} 
+
+header {
+    margin-top: 100px;
+}
+
+body {
+    background-color: #1f2937;
+    color: #fff;
+    height: 100vh;
+    
+}
+
+.sub-container {
+    padding: 10px;
+    
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+.articleText, .container {
+    padding: 10px;
+
+}
+
+.articleText p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.articleCon {
+    background-color: #6b21a8;
+    margin-top: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container .articleCon p:first-child {
+    font-size: 14px;
+}
+
+
+
+.container .articleCon p:last-child{
+    font-size: 1.2rem;
+}
+
+.sub-container .image {
+    width: 100%;
+    
+}
+
+
+.sub-container .image img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+
+.navigate {
+    min-height: 180px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 300px;
+    margin-top: 20px;
+}
+
+.navigate p:first-child{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.navigate p:last-child{
+    padding: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.navigate p:last-child:hover {
+    background: black;
+    color: #F2994A;
+    border: 1px solid #F2994A;
+    transition: color 2s ease-out;
+    transition: background 2s ease-out;
+    
+}
+
+
+
+.type {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 6.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+    }
+
+    .content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+.content h4 {
+    color: #D8D8D8;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.content .skills {
+   margin-top: 5px;
+}
+
+.content span {
+    font-size: 1.3em;
+}
+
+.main-sec .content h4 span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-sec .content .para {
+    font-size: 1em;
+    width: 75%;
+    color: #D8D8D8;
+    word-spacing: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    height: 7vh;
+    width: 100%;
+}
+
+
+
+
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.project a {
+    text-decoration: none;
+    margin: 10px;
+    color: #F2994A;
+    border: 1px solid #F2994A;
+    padding: 10px;
+    
+}
+.main-sec .project p {
+    color: #F2994A;
+    margin: 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #F2994A;
+    padding: 10px;
+}
+
+
+
+
+/* popup */
+
+.Animapop {
+    color: #F2994A;
+    font-size: 1.5em;
+    position: relative;
+    top: -20px;
+    margin-left: 40px;
+    animation: pulse 2s ease-out;
+}
+
+@keyframes pulse {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+/* popup */
+
+@media screen and (min-width: 700px) {
+    
+    .sub-container {
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+        width: 100%;
+       
+    }
+
+    
+
+    .content {
+        margin-left: 30px;
+    }
+
+  
+    
+
+    .sub-container .image img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .icons .social {
+        margin: 15px;
+    }
+
+    .project {
+        justify-content: center;
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .sub-container {
+        width: 85%;
+    }
+
+    .article {
+        width: 85%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .articleCon {
+        width: 100%;
+        margin: 0px 5px;
+    }
+
+    .container a  {
+        margin: 0px 5px;
+    }
+    
+}

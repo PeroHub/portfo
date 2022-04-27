@@ -1,0 +1,194 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 300px;
+    height: 80px;
+    margin: 0 10px;
+    cursor: pointer;
+   
+}
+
+header .hng {
+    width: 60px;
+    height: 60px;
+}
+
+header .ingressive {
+    width: 170px;
+    height: 70px;
+}
+
+header .zuri {
+    width: 80px;
+    height: 80px;
+} */
+
+main {
+    border:  1px solid rgb(211, 209, 209);
+    width: 65%;
+    padding: 50px;
+    min-height: 150vh;
+    position: relative;
+    top: 30px;
+    margin:  0 auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.profession p {
+    margin-top: 20px;
+}
+.profession {
+    padding: 20px;
+    /* border: 1px solid red; */
+    font-size: 1.1em;
+}
+.profession ul {
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.profession h4 {
+    text-align: center;
+    border-top: 1px solid rgb(192, 190, 190);
+    border-bottom: 1px solid rgb(192, 190, 190);
+    margin-top: 10px;
+}
+
+.internship {
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.internship h3 {
+    border-bottom: 1px solid rgb(192, 190, 190);
+    padding-bottom: 5px;
+}
+
+.internship p {
+    margin-top: 10px;
+    
+}
+
+.certification {
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.certification h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+
+.certification span {
+    /* border: 1px solid red; */
+   
+}
+
+.certification span:last-child {
+    position: relative;
+    left: 60%;
+}
+
+.volunteer{
+    margin-top: 10px;
+    /* border:  1px solid red; */
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.volunteer h3 {
+    margin-bottom: 5px;
+}
+
+.volunteer p {
+    margin-top: 10px;
+    
+}
+
+.volunteer ul {
+    padding-left: 50px;
+    margin-top: 10px;
+  
+}
+
+.skills {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* border:  1px solid red; */
+   
+}
+
+.box .score i {
+    background-color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 15px;
+        height: 220vh;
+        overflow-x: hidden;
+    }
+
+    header {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .volunteer ul {
+        padding-left: 15px;
+    }
+
+    .profession ul {
+        margin-left: 5px;
+    }
+
+    header .hng {
+        width: 50px;
+        height: 50px;
+    }
+
+    .certification {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+
+    header .ingressive {
+        width: 120px;
+        height: 50px;
+    }
+
+    header .zuri {
+        width: 50px;
+        height: 50px;
+    }
+}
